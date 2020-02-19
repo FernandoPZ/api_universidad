@@ -1,4 +1,4 @@
-import web # pip install web.py
+import web  # pip install web.py
 from web.template import ALLOWED_AST_NODES
 ALLOWED_AST_NODES.append('Constant')
 

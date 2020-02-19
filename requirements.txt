@@ -1,0 +1,10 @@
+appdirs==1.4.3
+cheroot==8.2.1
+distlib==0.3.0
+filelock==3.0.12
+jaraco.functools==3.0.0
+Markdown==3.1.1
+more-itertools==8.2.0
+six==1.14.0
+virtualenv==20.0.4
+web.py==0.40
