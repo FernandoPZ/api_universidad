@@ -77,12 +77,12 @@ class Alumnos:
                                 result.append(line4)
                                 result.append(line5)
                                 lo.append(result)
-                            with open ('static/csv/alumnos.csv','a+', newline = '\n') as csvfiles:
-                                writer = csv.writer(csvfiles)
-                                writer.writerow(result)
-                            if validator == 0:
-                                result.append("No existe el valor")
-                        return json.dumps("Realizado")
+                        with open ('static/csv/alumnos.csv','a+', newline = '') as csvfiles:
+                            writer = csv.writer(csvfiles)
+                            writer.writerow(result)
+                        if validator == 0:
+                            result.append("No existe el valor")
+                    return json.dumps("Realizado")
 
                 #Actualizar un registro
                 elif datos['action'] == "update":
