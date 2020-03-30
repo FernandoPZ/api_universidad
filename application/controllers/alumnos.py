@@ -47,7 +47,7 @@ class Alumnos:
                     result.append(m3)
                     result.append(m4)
                     result.append(m5)
-                    with open ('static/csv/alumnos.csv','a+', newline = '') as csvfiles:
+                    with open ('static/csv/alumnos.csv','a+', newline = '\n') as csvfiles:
                         writer = csv.writer(csvfiles)
                         writer.writerow(result)
                     return("Realizado")
@@ -77,7 +77,7 @@ class Alumnos:
                                 result.append(line4)
                                 result.append(line5)
                                 lo.append(result)
-                            with open ('static/csv/alumnos.csv','a+', newline = '') as csvfiles:
+                            with open ('static/csv/alumnos.csv','a+', newline = '\n') as csvfiles:
                                 writer = csv.writer(csvfiles)
                                 writer.writerow(result)
                             if validator == 0:
@@ -119,7 +119,7 @@ class Alumnos:
                                 result.append(fila4)
                                 result.append(fila5)
                                 lo.append(result)
-                        with open ('static/csv/alumnos.csv','a+', newline = '') as csvfiles:
+                        with open ('static/csv/alumnos.csv','a+', newline = '\n') as csvfiles:
                             writer = csv.writer(csvfiles)
                             for x in lo:
                                 writer.writerow(x)
